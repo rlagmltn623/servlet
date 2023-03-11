@@ -1,0 +1,5 @@
+// 현재 사용하고 있는 8080 포트를 사용하는 네트워크 통계 정보를 출력한다.
+netstat -ano | findstr 8080
+
+// 위 명령어를 통해 출력된 목록의 process_id를 입력하여 강제 종료시킨다.
+taskkill /F /pid [process_id]
